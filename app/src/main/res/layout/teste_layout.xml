@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:text="Menu Principal"
             android:textStyle="bold"
-            android:textColor="#FF018786"
+            android:textColor="#10384A"
             android:textSize="20dp"
             android:layout_marginBottom="10dp"
             android:layout_gravity="center"/>
@@ -46,20 +46,20 @@
 
                 <ImageView
                     android:layout_width="150dp"
-                    android:layout_height="120dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawble/planet-earth.png"
+                    android:layout_height="110dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/planetearth"
                      />
 
                 <Button
                     android:id="@+id/btn_reserve"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Reserve"
+
                     android:textSize="12dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="57dp"
-                    android:backgroundTint="#FF018786"/>
+                    android:backgroundTint="#327391"/>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -72,19 +72,20 @@
 
                 <ImageView
                     android:layout_width="150dp"
-                    android:layout_height="120dp"
-                    android:scaleType="centerCrop"
+                    android:layout_height="110dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ecology"
                     />
 
                 <Button
                     android:id="@+id/btn_quartos"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Quartos"
+
                     android:textSize="12dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="57dp"
-                    android:backgroundTint="#FF018786"/>
+                    android:backgroundTint="#327391"/>
 
             </androidx.cardview.widget.CardView>
 
@@ -98,19 +99,20 @@
 
                 <ImageView
                     android:layout_width="150dp"
-                    android:layout_height="120dp"
-                    android:scaleType="centerCrop"
+                    android:layout_height="110dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/sustainable"
                      />
 
                 <Button
                     android:id="@+id/btn_piscina"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Piscina"
+
                     android:textSize="12dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="57dp"
-                    android:backgroundTint="#FF018786"/>
+                    android:backgroundTint="#327391"/>
 
 
             </androidx.cardview.widget.CardView>
@@ -126,19 +128,20 @@
 
                 <ImageView
                     android:layout_width="150dp"
-                    android:layout_height="120dp"
-                    android:scaleType="centerCrop"
+                    android:layout_height="110dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/secondhand"
                      />
 
                 <Button
                     android:id="@+id/btn_fachada"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Localização"
+
                     android:textSize="12dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="57dp"
-                    android:backgroundTint="#FF018786"/>
+                    android:backgroundTint="#327391"/>
 
             </androidx.cardview.widget.CardView>
 
@@ -164,7 +167,7 @@
                     android:textSize="12dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="57dp"
-                    android:backgroundTint="#FF018786"/>
+                    android:backgroundTint="#327391"/>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -186,11 +189,11 @@
                     android:id="@+id/btn_contato"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Contato"
+
                     android:textSize="12dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="57dp"
-                    android:backgroundTint="#FF018786"/>
+                    android:backgroundTint="#327391"/>
             </androidx.cardview.widget.CardView>
         </RelativeLayout>
 
