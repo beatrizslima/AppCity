@@ -58,6 +58,7 @@
         android:layout_margin="10dp">
 
         <Button
+            android:id="@+id/btnEntrar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="150dp"

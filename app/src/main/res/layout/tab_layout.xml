@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/idTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/AppCity">
+        
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/idTecnologia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tecnologia"/>
+        
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/idMeioAmbiente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meio Ambiente"/>
+    </com.google.android.material.tabs.TabLayout>
+
+    <include
+        android:id="@+id/fragMeioAmbiente"
+        layout="@layout/meio_ambiente_frag_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTabLayout"/>
+
+    <include
+        android:id="@+id/fragTecnologia"
+        layout="@layout/tecnologia_frag_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragMeioAmbiente"/>
+
+
+</RelativeLayout>

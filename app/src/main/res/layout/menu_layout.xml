@@ -1,23 +1,203 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:background="#EBF3F8">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/idToolBarMenu"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:navigationIcon="@drawable/baseline_arrow_back"
+        android:background="@color/material_dynamic_primary40"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu Principal"
+            android:textStyle="bold"
+            android:textColor="#10384A"
+            android:textSize="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"/>
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/idToolBarLivros"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            app:navigationIcon="@drawable/baseline_arrow_back"
-            />
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_reserve"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="7dp">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="110dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/planetearth" />
+
+                <Button
+                    android:id="@+id/btn_reserve"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                    android:text="planeta verde"
+                    android:textSize="12dp"
+                    android:layout_marginTop="57dp"
+                    android:backgroundTint="#327391"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_quartos"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="7dp"
+                android:layout_toRightOf="@id/card_reserve">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="110dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ecology"
+                    />
+
+                <Button
+                    android:id="@+id/btn_quartos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="energia renovável"
+                    android:textSize="12dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="57dp"
+                    android:backgroundTint="#327391"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_piscina"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="7dp"
+                android:layout_below="@id/card_reserve">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="110dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/sustainable"
+                     />
+
+                <Button
+                    android:id="@+id/btn_piscina"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="preservação"
+                    android:textSize="12dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="57dp"
+                    android:backgroundTint="#327391"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_fachada"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="7dp"
+                android:layout_below="@id/card_quartos"
+                android:layout_toRightOf="@id/card_piscina">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="110dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/secondhand"
+                     />
+
+                <Button
+                    android:id="@+id/btn_fachada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="reutilização"
+                    android:textSize="12dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="57dp"
+                    android:backgroundTint="#327391"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_sobre"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="7dp"
+                android:layout_below="@id/card_piscina">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/search"
+                     />
+
+                <Button
+                    android:id="@+id/btn_sobre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sobre"
+                    android:textSize="12dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="57dp"
+                    android:backgroundTint="#327391"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_coleta"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="7dp"
+                android:layout_below="@id/card_fachada"
+                android:layout_toRightOf="@id/card_sobre">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="110dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/bin"
+                     />
+
+                <Button
+                    android:id="@+id/btn_coleta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Coleta Seletiva"
+                    android:textSize="12dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="57dp"
+                    android:backgroundTint="#327391"/>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+
     </LinearLayout>
-
-
-
-
-</RelativeLayout>
+</LinearLayout>
